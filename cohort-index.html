@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohort Widget</title>
+    <link rel="stylesheet" href="cohort-styles.css">
+</head>
+<body>
+    <div class="cohort-widget-container">
+        <div class="cohort-widget-launcher" id="cohort-launcher">
+            <span>+</span>
+        </div>
+        <div class="cohort-widget-content" id="cohort-widget">
+            <div class="cohort-video-container">
+                <video id="cohort-videoPlayer" controls>
+                    <source src="https://cdn.shopify.com/videos/c/o/v/f49e80a23f234c8b93ce7663ec1e0714.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video id="cohort-cameraPreview" autoplay playsinline style="display: none;"></video>
+            </div>
+            <div class="cohort-button-container">
+                <button id="cohort-startVideo" class="cohort-action-button">Start Video</button>
+                <button id="cohort-recordAnswer" class="cohort-action-button">Record Answer</button>
+            </div>
+            <div class="cohort-recording-controls" style="display: none;">
+                <button id="cohort-startRecording" class="cohort-action-button">Start Recording</button>
+                <button id="cohort-stopRecording" class="cohort-action-button" style="display: none;">Stop Recording</button>
+            </div>
+            <form class="cohort-form-container">
+                <input type="email" placeholder="Enter your email" class="cohort-form-input" required>
+                <textarea placeholder="Enter your message" class="cohort-form-input cohort-textarea" required></textarea>
+                <button type="submit" class="cohort-submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="cohort-script.js"></script>
+</body>
+</html> 
